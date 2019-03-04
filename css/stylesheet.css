@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'SohoStdMedium';
+    src: url('SohoStdMedium/soho_std_medium-webfont.eot');
+    src: url('SohoStdMedium/soho_std_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdMedium/soho_std_medium-webfont.woff') format('woff'),
+         url('SohoStdMedium/soho_std_medium-webfont.ttf') format('truetype'),
+         url('SohoStdMedium/soho_std_medium-webfont.svg#SohoStdMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdMediumItalic';
+    src: url('SohoStdMediumItalic/soho_std_medium_italic-webfont.eot');
+    src: url('SohoStdMediumItalic/soho_std_medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdMediumItalic/soho_std_medium_italic-webfont.woff') format('woff'),
+         url('SohoStdMediumItalic/soho_std_medium_italic-webfont.ttf') format('truetype'),
+         url('SohoStdMediumItalic/soho_std_medium_italic-webfont.svg#SohoStdMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdItalic';
+    src: url('SohoStdItalic/soho_std_italic-webfont.eot');
+    src: url('SohoStdItalic/soho_std_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdItalic/soho_std_italic-webfont.woff') format('woff'),
+         url('SohoStdItalic/soho_std_italic-webfont.ttf') format('truetype'),
+         url('SohoStdItalic/soho_std_italic-webfont.svg#SohoStdItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdLight';
+    src: url('SohoStdLight/soho_std_light-webfont.eot');
+    src: url('SohoStdLight/soho_std_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdLight/soho_std_light-webfont.woff') format('woff'),
+         url('SohoStdLight/soho_std_light-webfont.ttf') format('truetype'),
+         url('SohoStdLight/soho_std_light-webfont.svg#SohoStdLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdLightItalic';
+    src: url('SohoStdLightItalic/soho_std_light_italic-webfont.eot');
+    src: url('SohoStdLightItalic/soho_std_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdLightItalic/soho_std_light_italic-webfont.woff') format('woff'),
+         url('SohoStdLightItalic/soho_std_light_italic-webfont.ttf') format('truetype'),
+         url('SohoStdLightItalic/soho_std_light_italic-webfont.svg#SohoStdLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdRegular';
+    src: url('SohoStdRegular/soho_std_regular-webfont.eot');
+    src: url('SohoStdRegular/soho_std_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdRegular/soho_std_regular-webfont.woff') format('woff'),
+         url('SohoStdRegular/soho_std_regular-webfont.ttf') format('truetype'),
+         url('SohoStdRegular/soho_std_regular-webfont.svg#SohoStdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SohoStdBold';
+    src: url('SohoStdBold/soho_std_bold-webfont.eot');
+    src: url('SohoStdBold/soho_std_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SohoStdBold/soho_std_bold-webfont.woff') format('woff'),
+         url('SohoStdBold/soho_std_bold-webfont.ttf') format('truetype'),
+         url('SohoStdBold/soho_std_bold-webfont.svg#SohoStdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('MyriadPro/myriadpro-it-webfont.eot');
+    src: url('MyriadPro/myriadpro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('MyriadPro/myriadpro-it-webfont.woff') format('woff'),
+         url('MyriadPro/myriadpro-it-webfont.ttf') format('truetype'),
+         url('MyriadPro/myriadpro-it-webfont.svg#MyriadProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

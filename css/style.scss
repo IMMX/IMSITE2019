@@ -1,0 +1,23 @@
+/* style.scss */
+#navbar {
+  width: 80%;
+  height: 23px;
+  .nav-edgar {margin:0 0 0 0;}
+}
+
+#navbar {
+  width: 80%;
+  height: 23px;
+
+  ul { list-style-type: none; }
+  li {
+    float: left;
+    a { font-weight: bold; }
+  }
+}
+
+a.bbbbblinkd {
+  color: #ce4dd6;
+  &:hover { color: #ffb3ff; }
+  &:visited { color: #c458cb; }
+}

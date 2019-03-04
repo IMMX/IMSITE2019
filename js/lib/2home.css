@@ -1,0 +1,837 @@
+#header{
+	display:block;
+	position:fixed;
+	z-index:10;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:1px;
+}
+#header > #logo{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left:-42px;
+/* 	margin-left:-450px; */
+	width:85px;
+	height:85px;
+	background:#000000;
+	cursor:pointer;
+}
+#header > #logo > div{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:85px;
+	height:85px;
+	background:url('../images/logo-white.png') center center no-repeat transparent;
+	-webkit-transform: rotate(0deg);
+}
+#header > #logo > div > div{
+	display:block;
+	position:absolute;
+	top:15px;
+	left:14px;
+	width:56px;
+	height:56px;
+	background-image:url('../images/play.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:#000000;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+#header > #logo > #loading{
+	display:block;
+	position:absolute;
+	top:25px;
+	left:25px;
+	width:36px;
+	height:36px;
+	background:url('../images/scozzese_loading.png') center top no-repeat #000000;
+}
+
+#loadbar{
+	display:block;
+	position:fixed;
+	z-index:10;
+	top:86px;
+	left:50%;
+	margin-left:-42px;
+	height:1px;
+	background-color:#383838;
+}
+
+#header > #menu{
+	display:block;
+	position:absolute;
+	overflow:hidden;
+	top:0px;
+	left:50%;
+	padding-top:33px;
+	margin-left:-363px;
+	width:0px;
+	height:52px;
+	background:#000000;
+	cursor:pointer;
+	text-align:center;
+	color:#838383;
+}
+#header > #menu > a{
+	display:inline-block;
+	position:relative;
+	height:19px;
+	overflow:hidden;
+	padding:0px 10px;
+	font:14px/15px "InsightRegular";
+	text-align:center;
+	color:#838383;
+}
+#header > #menu > a.contact{
+
+}
+#header > #menu > span{
+	display:inline-block;
+	padding:0px 2px;
+	font:14px/15px "InsightRegular";
+	color:#838383;
+}
+#header > #menu > a:hover{
+	color:#ffffff;
+}
+#map{
+	display:block;
+	position:absolute;
+	top:20px;
+	z-index:20;
+	width:120px;
+	height:100px;
+	right:20px;
+	cursor:pointer;
+}
+#map > a {
+	display:block;
+	position:absolute;
+	width:8px;
+	height:8px;
+	cursor:pointer;
+	background:#ffffff;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+
+}
+#map.dark > a{
+	background:#000000;
+}
+#map > a:hover{
+	transform: scale(1.5,1.5);
+	-ms-transform: scale(1.5,1.5);
+	-webkit-transform: scale(1.5,1.5);
+	-moz-transform: scale(1.5,1.5);
+	-o-transform: scale(1.5,1.5);
+}
+#map > a:hover, #map > a.active {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+#map > a.incoming {
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+#map > a.loading {
+	opacity:0.12;
+	filter:alpha(opacity=12);
+}
+.loading-claim {
+	color:#ffffff;
+	font:14px/14px "InsightRegular";
+}
+.loading-claim > span {
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#footer-container{
+	background:#151515;
+}
+#footer-container > .project{
+	height:auto;
+}
+#footer-container > .project > .block{
+	cursor:default;
+}
+#footer{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	height:100%;
+	background:#151515;
+}
+#footer > .container{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left: -450px;
+	height:130px;
+	width:900px;
+}
+#footer > .container > .data {
+	display:block;
+	position:relative;
+	height:85px;
+	background:url('../images/logo-dark.png') 26px center no-repeat;
+}
+#footer > .container > .social {
+	display:block;
+	position:absolute;
+	top:35px;
+	right:92px;
+}
+#footer > .container > .social > div {
+	display:block;
+	width:100px;
+	height:19px;
+	float:left;
+}
+#footer > .container > .social > div.google{
+	width:68px;
+}
+#footer > .container > .social > div.facebook{
+	width:90px;
+}
+#footer > .container > .data > span {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:60px;
+	width:450px;
+	padding-top:25px;
+	padding-left:70px;
+	z-index:100;
+	color:#383838;
+	font:15px/18px "InsightRegular";
+}
+#footer > #mailbutton{
+	display:block;
+	width:900px;
+	margin:127px auto 0px;
+	padding-bottom:10px;
+	cursor:pointer;
+}
+#footer > #mailbutton > h4{
+	display:block;
+	padding-right:10px;
+	text-align:center;
+	letter-spacing:-8px;
+	font:150px/120px "InsightRegular";
+	color:#383838;
+}
+#footer > #mailbutton > #mailto{
+	display:block;
+	text-align:center;
+	letter-spacing:0px;
+	font:68px/75px "InsightRegular";
+	color:#383838;
+}
+#footer > #wetweetwhat{
+	display:block;
+	text-align:center;
+	letter-spacing:2px;
+	font:86px/80px "InsightRegular";
+	color:#383838;
+}
+#footer > #tweet{
+	display:block;
+	width:741px;
+	overflow:hidden;
+	margin:20px auto;
+	padding:10px 80px 0px 79px;
+}
+#footer > #tweet > p{
+	display:block;
+	width:207px;
+	padding:0px 20px;
+	float:left;
+	font:16px/18px "InsightRegular";
+	color:#383838;
+}
+#footer > #tweet > p > span{
+	display:block;
+	font:12px/30px "InsightRegular";
+	color:#383838;
+}
+#footer > #tweet > p > a:hover{
+	color:#ffffff;
+}
+#footer > #claim{
+	display:block;
+	width:700px;
+	padding:0px 100px;
+	margin:10px auto;
+	text-align:left;
+	font:18px/24px "InsightRegular";
+	color:#383838;
+}
+#footer > #claim > #seeya{
+	display:block;
+	float:right;
+	width:100px;
+	padding-right:5px;
+	text-align:right;
+	font:18px/24px "InsightRegular";
+	color:#383838;
+}
+#footer > .sep{
+	display:block;
+	width:698px;
+	height:19px;
+	margin:15px auto;
+	background-color:#383838;
+}
+#footer > .sep > .links{
+	display:block;
+	width:255px;
+	height:19px;
+	padding:0px 20px;
+	margin:0px auto;
+	background:#151515;
+}
+#footer > .sep > .links > a{
+	display:block;
+	float:right;
+	height:16px;
+	width:85px;
+}
+#footer > .sep > .links > a.behance {
+	background:url('../images/behance.png') center bottom no-repeat;
+}
+#footer > .sep > .links > a.twitter {
+	background:url('../images/twitter.png') center bottom no-repeat;
+}
+#footer > .sep > .links > a.facebook {
+	background:url('../images/facebook.png') center bottom no-repeat;
+}
+
+#page-content{
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+
+#layer{
+	display:block;
+	position:fixed;
+	z-index:5;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#151515;
+}
+
+.project-container{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	height:650px;
+}
+.project{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	height:650px;
+}
+.block{
+	display:block;
+	position:absolute;
+	height:650px;
+	top:0px;
+	left:0px;
+	cursor:pointer;
+	overflow:hidden;
+	color:#ffffff;
+}
+.block > .highlight{
+	display:block;
+	position:relative;
+	padding-top:211px;
+	height:439px;
+}
+.project-container > .project > .block.share{
+	background:#000000;
+}
+.project-container > .project > .block.share > div.social{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left:-200px;
+	height:650px;
+	width:400px;
+	background:url('../images/share-bollonzo.png') center center no-repeat;
+}
+.project-container > .project > .block.share > div.social > .twitter{
+	display:block;
+	position:relative;
+	margin:20px auto;
+	width:55px;
+}
+.project-container > .project > .block.share > div.social > .facebook{
+	display:block;
+	position:relative;
+	margin:250px auto 0px;
+	width:49px;
+}
+.project-container > .project > .block.share > div.social > .likethis{
+	display:block;
+	width:400px;
+	position:absolute;
+	top:137px;
+	font:48px/48px "InsightRegular";
+	text-align:center;
+	color:#ffffff;
+}
+.project-container > .project > .block.share > div.social > .sharethis{
+	display:block;
+	width:400px;
+	position:absolute;
+	top:460px;
+	font:48px/48px "InsightRegular";
+	text-align:center;
+	color:#ffffff;
+}
+
+
+
+
+
+/* PROJECTS STYLES */
+
+.portada > .block {
+	background:#333333;
+}
+#portada-cover {
+	background:url('../images/portada/portada_BW.jpg') top center no-repeat #333333;
+}
+#portada-cover > .highlight {
+	background:url('../images/portada/portada.jpg') top center no-repeat #333333;
+}
+.portada > .loaded.second {
+	background:url('../images/portada/bg.jpg') top center no-repeat #333333;
+}
+.portada > .loaded.third {
+	background:url('../images/portada/bg.jpg') top center no-repeat #333333;
+}
+.portada > .loaded.fourth {
+	background:url('../images/portada/bg.jpg') top center no-repeat #333333;
+}
+
+
+.takeover > .block {
+	background:#333333;
+}
+#takeover-cover {
+	background:url('../images/portada/portada_BW.jpg') top center no-repeat #333333;
+}
+#takeover-cover > .highlight {
+	background:url('../images/portada/portada.jpg') top center no-repeat #333333;
+}
+.takeover > .loaded.second {
+	background:url('../images/takeover/take_journey.jpg') top center no-repeat #c7a29e;
+}
+.takeover > .loaded.third {
+	background:url('../images/takeover/take_darkshadows.jpg') top center no-repeat #c7a29e;
+}
+.takeover > .loaded.fourth {
+	background:url('../images/takeover/take_sprite.jpg') top center no-repeat #c7a29e;
+}
+.takeover > .loaded.fifth {
+	background:url('../images/takeover/cut.jpg') top center no-repeat #c7a29e;
+}
+
+.slam > .block {
+	background:#6b7077;
+}
+#slam-cover {
+	background:url('../images/slam/slam_copertina_BW.jpg') top center repeat-x #000;
+}
+#slam-cover > .highlight {
+	background:url('../images/slam/slam_copertina.jpg') top center repeat-x #6b7077;
+}
+.slam > .loaded.second {
+	background:url('../images/slam/slam01.jpg') top center no-repeat #4587a7;
+}
+.slam > .loaded.third {
+	background:url('../images/slam/slam02.jpg') top center no-repeat #4587a7;
+}
+.slam > .loaded.fourth {
+	background:url('../images/slam/slam03.jpg') top center no-repeat #5799bb;
+}
+.slam > .loaded.fifth {
+	background:url('../images/slam/slam04.jpg') top center no-repeat #24799e;
+}
+
+.alessiamarcuzzi > .block {
+	background:#cd4747;
+}
+#alessiamarcuzzi-cover {
+	background:url('../images/alessiamarcuzzi/alessiamarcuzzi_copertina_BW.jpg') top center no-repeat #2a2a2a;
+}
+#alessiamarcuzzi-cover > .highlight {
+	background:url('../images/alessiamarcuzzi/alessiamarcuzzi_copertina.jpg') top center no-repeat #d0d0d0;
+}
+.alessiamarcuzzi > .loaded.second {
+	background:url('../images/alessiamarcuzzi/alessiamarcuzzi01.jpg') top center no-repeat #cd4747;
+}
+.alessiamarcuzzi > .loaded.third {
+	background:url('../images/alessiamarcuzzi/alessiamarcuzzi02.jpg') top center no-repeat #cd4747;
+}
+.alessiamarcuzzi > .loaded.fourth {
+	background:url('../images/alessiamarcuzzi/alessiamarcuzzi03.jpg') top center no-repeat #cd4747;
+}
+
+.annasafroncik > .block {
+	background:#7e9f98;
+}
+#annasafroncik-cover {
+	background:url('../images/annasafroncik/annasafroncik_copertina_BW.jpg') top center no-repeat #000000;
+}
+#annasafroncik-cover > .highlight {
+	background:url('../images/annasafroncik/annasafroncik_copertina.jpg') top center no-repeat #7e9f98;
+}
+.annasafroncik > .loaded.second {
+	background:url('../images/annasafroncik/annasafroncik01.jpg') top center no-repeat #7e9f98;
+}
+.annasafroncik > .loaded.third {
+	background:url('../images/annasafroncik/annasafroncik02.jpg') top center no-repeat #7e9f98;
+}
+
+.dalbello > .block {
+	background:#7595a9;
+}
+#dalbello-cover {
+	background:url('../images/dalbello/dalbello_copertina_BW.jpg') top center no-repeat #000000;
+}
+#dalbello-cover > .highlight {
+	background:url('../images/dalbello/dalbello_copertina.jpg') top center no-repeat #000000;
+}
+.dalbello > .loaded.second {
+	background:url('../images/dalbello/dalbello01.jpg') top center no-repeat #7595a9;
+}
+.dalbello > .loaded.third {
+	background:url('../images/dalbello/dalbello02.jpg') top center no-repeat #7595a9;
+}
+.dalbello > .loaded.fourth {
+	background:url('../images/dalbello/dalbello03.jpg') top center no-repeat #7595a9;
+}
+.dalbello > .loaded.fifth {
+	background:url('../images/dalbello/dalbello04.jpg') top center no-repeat #7595a9;
+}
+
+.pelicanhotel > .block {
+	background:#a9be5f;
+}
+#pelicanhotel-cover {
+	background:url('../images/pelicanhotel/pelicanhotel_copertina_BW.jpg') top center repeat-x #000;
+}
+#pelicanhotel-cover > .highlight {
+	background:url('../images/pelicanhotel/pelicanhotel_copertina.jpg') top center repeat-x #c9a3a0;
+}
+.pelicanhotel > .loaded.second {
+	background:url('../images/pelicanhotel/pelicanhotel01.jpg') top center no-repeat #368276;
+}
+.pelicanhotel > .loaded.third {
+	background:url('../images/pelicanhotel/pelicanhotel02.jpg') top center no-repeat #a9be5f;
+}
+.pelicanhotel > .loaded.fourth {
+	background:url('../images/pelicanhotel/pelicanhotel03.jpg') top center no-repeat #edc959;
+}
+.pelicanhotel > .loaded.fifth {
+	background:url('../images/pelicanhotel/pelicanhotel04.jpg') top center no-repeat #a7bf5f;
+}
+
+.badarilighting > .block {
+	background:#17181c;
+}
+#badarilighting-cover {
+	background:url('../images/badarilighting/badarilighting_copertina_BW.jpg') top center no-repeat #020202;
+}
+#badarilighting-cover > .highlight {
+	background:url('../images/badarilighting/badarilighting_copertina.jpg') top center no-repeat #131428;
+}
+.badarilighting > .loaded.second {
+	background:url('../images/badarilighting/badarilighting01.jpg') top center no-repeat #17181c;
+}
+.badarilighting > .loaded.third {
+	background:url('../images/badarilighting/badarilighting02.jpg') top center no-repeat #17181c;
+}
+.badarilighting > .loaded.fourth {
+	background:url('../images/badarilighting/badarilighting03.jpg') top center no-repeat #17181c;
+}
+.badarilighting > .loaded.fifth {
+	background:url('../images/badarilighting/badarilighting04.jpg') top center no-repeat #17181c;
+}
+
+.traveler > .block {
+	background:#f0ece0;
+}
+#traveler-cover {
+	background:url('../images/traveler/traveler_copertina_BW.jpg') top center no-repeat #373737;
+}
+#traveler-cover > .highlight {
+	background:url('../images/traveler/traveler_copertina.jpg') top center no-repeat #f0ece0;
+}
+.traveler > .loaded.second {
+	background:url('../images/traveler/traveler01.jpg') top center no-repeat #f0ece0;
+}
+.traveler > .loaded.third {
+	background:url('../images/traveler/traveler02.jpg') top center no-repeat #cde0e4;
+}
+.traveler > .loaded.fourth {
+	background:url('../images/traveler/traveler03.jpg') top center no-repeat #f0ece0;
+}
+
+.giannanannini > .block {
+	background:#000000;
+}
+#giannanannini-cover {
+	background:url('../images/giannanannini/giannanannini_copertina_BW.jpg') top center no-repeat #000000;
+}
+#giannanannini-cover > .highlight {
+	background:url('../images/giannanannini/giannanannini_copertina.jpg') top center no-repeat #000000;
+}
+.giannanannini > .loaded.second {
+	background:url('../images/giannanannini/giannanannini01.jpg') top center no-repeat #000000;
+}
+.giannanannini > .loaded.third {
+	background:url('../images/giannanannini/giannanannini02.jpg') top center no-repeat #000000;
+}
+.giannanannini > .loaded.fourth {
+	background:url('../images/giannanannini/giannanannini03.jpg') top center no-repeat #000000;
+}
+
+
+.renatozero > .block {
+	background:#000000;
+}
+#renatozero-cover {
+	background:url('../images/renatozero/renatozero_copertina_BW.jpg') top center no-repeat #000000;
+}
+#renatozero-cover > .highlight {
+	background:url('../images/renatozero/renatozero_copertina.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.second {
+	background:url('../images/renatozero/renatozero01.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.third {
+	background:url('../images/renatozero/renatozero02.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.fourth {
+	background:url('../images/renatozero/renatozero03.jpg') top center no-repeat #b4131b;
+}
+.renatozero > .loaded.fifth {
+	background:url('../images/renatozero/renatozero04.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.sixth {
+	background:url('../images/renatozero/renatozero05.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.seventh {
+	background:url('../images/renatozero/renatozero06.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.eightieth {
+	background:url('../images/renatozero/renatozero07.jpg') top center no-repeat #000000;
+}
+.renatozero > .loaded.nineth {
+	background:url('../images/renatozero/renatozero08.jpg') top center no-repeat #000000;
+}
+
+.laurapausini > .block {
+	background:#000000;
+}
+#laurapausini-cover {
+	background:url('../images/laurapausini/laurapausini_copertina_BW.jpg') top center no-repeat #000000;
+}
+#laurapausini-cover > .highlight {
+	background:url('../images/laurapausini/laurapausini_copertina.jpg') top center no-repeat #000000;
+}
+.laurapausini > .loaded.second {
+	background:url('../images/laurapausini/laurapausini01.jpg') top center no-repeat #000000;
+}
+.laurapausini > .loaded.third {
+	background:url('../images/laurapausini/laurapausini02.jpg') top center no-repeat #000000;
+}
+.laurapausini > .loaded.fourth {
+	background:url('../images/laurapausini/laurapausini03.jpg') top center no-repeat #000000;
+}
+.laurapausini > .loaded.fifth {
+	background:url('../images/laurapausini/laurapausini04.jpg') top center no-repeat #efefef;
+}
+
+.staff > .block {
+	background:#000000;
+	height:630px;
+	padding-top:20px;
+}
+#staff-cover {
+	background:url('../images/we_love_BW.jpg') top center no-repeat #000000;
+	height:650px;
+	padding-top:0px;
+}
+#staff-cover > .highlight {
+	background:url('../images/we_love.jpg') top center no-repeat #000000;
+}
+
+
+div.staff-container {
+	display:block;
+	position:relative;
+	margin:200px auto 0px;
+	width:920px;
+}
+div.staff-container > img{
+	display:block;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+div.staff-container > h4{
+	display:block;
+	position:relative;
+	margin-left:156px;
+	color:#ffffff;
+	letter-spacing:-1px;
+	font:75px/75px "InsightRegular";
+	text-transform:lowercase;
+}
+div.staff-container > h5{
+	display:block;
+	position:relative;
+	margin-left:156px;
+	color:#ffffff;
+	font:50px/45px "InsightRegular";
+}
+div.staff-container > p{
+	display:block;
+	position:relative;
+	padding:20px 0px;
+	margin-left:156px;
+	color:#ffffff;
+	font:12px/16px "InsightRegular";
+}
+div.staff-container > a{
+	display:block;
+	position:relative;
+	margin-left:156px;
+	color:#ffffff;
+	font:17px/17px "InsightRegular";
+}
+
+
+
+
+
+
+.title-dx{
+	display:block;
+	position:absolute;
+	left:50%;
+	margin-left:-450px;
+/*	position:relative;
+	margin:0px auto;
+*/	width:900px;
+	text-align:right;
+}
+.title-sx{
+	display:block;
+	position:relative;
+	margin:0px auto;
+	width:900px;
+	text-align:right;
+}
+.title-dx > span{
+	right:0px;
+}
+.title-sx > span{
+	left:0px;
+}
+span.project-name{
+	display:inline-block;
+	height:78px;
+	padding:0px 10px;
+	font:40px/75px "InsightRegular";
+	color:#ffffff;
+	background-color:transparent;
+}
+span.project-name.tall{
+	height:90px;
+}
+span.project-name.first{
+	position:absolute;
+	top:0px;
+}
+span.project-name.second{
+	position:absolute;
+	top:38px;
+}
+span.description{
+	display:inline-block;
+	position:absolute;
+	top:102px;
+	padding:4px 10px;
+	font:48px/48px "InsightRegular";
+	color:#ffffff;
+	background-color:transparent;
+}
+span.description.under-tall{
+	top:176px;
+}
+div.bollonzo{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:650px;
+	width:100%;
+	overflow:hidden;
+	/*background:url('../images/bollonzo-line.png') center center no-repeat transparent; */
+	-webkit-transform: rotate(0deg);
+
+}
+div.bollonzo > div {
+	display:block;
+	position:absolute;
+	width:100%;
+	height:650px;
+	background:url('../images/bollonzo.png') center center no-repeat transparent; 
+}
+div.bollonzo > div > span{
+	display:block;
+	position:absolute;
+	top:307px;
+	height:132px;
+	width:100%;
+	text-align:center;
+	font:16px/18px "InsightRegular";
+	color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

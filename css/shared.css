@@ -1,0 +1,9 @@
+/* RESET */
+* { margin: 0; padding: 0; border: 0; border-radius:0; border-spacing:0; -webkit-appearance:none; -webkit-tap-highlight-color:transparent; -webkit-touch-callout:none; -webkit-user-select:none; }
+*:focus { outline: none; }
+a { text-decoration: none; color:#9e9e9e; }
+li { list-style:none; }
+
+body{
+	background: #000000;
+}

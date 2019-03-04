@@ -1,0 +1,23 @@
+/* style.scss */
+#navbar {
+  width: 80%;
+  height: 23px; }
+  #navbar .nav-edgar {
+    margin: 0 0 0 0; }
+
+#navbar {
+  width: 80%;
+  height: 23px; }
+  #navbar ul {
+    list-style-type: none; }
+  #navbar li {
+    float: left; }
+    #navbar li a {
+      font-weight: bold; }
+
+a.linkd {
+  color: #ce4dd6; }
+  a.linkd:hover {
+    color: #ffb3ff; }
+  a.linkd:visited {
+    color: #c458cb; }
