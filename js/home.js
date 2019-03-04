@@ -249,18 +249,12 @@ window.addEvent('domready', function(event) {
     }
 
 
-    listenKey += event.key;
-    if (!'smannau'.match(listenKey)) {
-        listenKey = '';
-    } else if (listenKey == 'smannau') {
-        listenKey = '';
-        location.href = 'http://mariostabenesututto.tumblr.com/';
-    }
+
 
 });
 
 function newFunction() {
-    return '/index.html'; //antes mobile.html
+    return '/mobile.html'; //antes mobile.html
 }
 
 function checkHash() {
