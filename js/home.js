@@ -36,7 +36,7 @@ $extend(Element.Styles, newStyles);
 window.addEvent('domready', function(event) {
 
     if (Browser.Platform.ios) {
-        location.href = 'mobile.html';
+        location.href = newFunction();
         return;
     }
     $('layer').setStyle('height', $('page-content').getSize().y + window.getSize().y);
@@ -258,6 +258,10 @@ window.addEvent('domready', function(event) {
     }
 
 });
+
+function newFunction() {
+    return '/index.html'; //antes mobile.html
+}
 
 function checkHash() {
 
