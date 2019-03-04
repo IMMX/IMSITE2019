@@ -1,609 +1,688 @@
-#layer{
-	display:none;
-}
-#header{
-	display:block;
-	position:fixed;
-	z-index:10;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:1px;
-}
-#header > #logo{
-	display:block;
-	position:absolute;
-	top:0px;
-	left:50%;
-	margin-left:-42px;
-/* 	margin-left:-450px; */
-	width:85px;
-	height:85px;
-	background:#000000;
-	cursor:pointer;
-}
-#header > #logo > div{
-	display:block;
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:85px;
-	height:85px;
-	background:url('../images/im.png') center center no-repeat transparent;
-	transform:rotate(0deg);
-	-ms-transform:rotate(0deg); /* IE 9 */
-	-webkit-transform:rotate(0deg); /* Safari and Chrome */
-	-moz-transform:rotate(0deg); /* Firefox */
-	-o-transform:rotate(0deg); /* Opera */
-}
-#header > #logo > #loading{
-	display:block;
-	position:absolute;
-	top:25px;
-	left:25px;
-	width:36px;
-	height:36px;
-	background:url('../images/im_loading.png') center top no-repeat #000000;
-}
-#header > #menu{
-	display:block;
-	position:absolute;
-	overflow:hidden;
-	top:0px;
-	left:50%;
-	margin-left:-363px;
-	width:813px;
-	height:85px;
-	background:#000000;
-	cursor:pointer;
-	text-align:center;
-	color:#838383;
-	opacity:0;
-}
-#header > #menu > a{
-	display:inline-block;
-	position:relative;
-	width:200px;
-	height:85px;
-	overflow:hidden;
-	padding:0px 10px;
-	font:34px/85px "InsightRegular";
-	text-align:center;
-	color:#838383;
-}
-#header > #menu > a.contact{
-	width:400px;
-}
-#header > #menu > a > div{
-	display:block;
-	position:absolute;
-	top:85px;
-	width:200px;
-	height:85px;
-	overflow:hidden;
-	font:34px/85px "InsightRegular";
-	color:#ffffff;
-	background-color:#000000;
-}
-#header > #menu > span{
-	display:inline-block;
-	padding:0px 2px;
-	font:34px/85px "InsightRegular";
-	color:#838383;
-}
-#header > #menu > a:hover{
-	color:#ffffff;
+#layer {
+    display: none;
 }
 
-#footer-container{
-	background:#151515;
-}
-#footer-container > .project{
-	height:auto;
-}
-#footer-container > .project > .block{
-	cursor:default;
-}
-#footer{
-	display:block;
-	position:relative;
-	overflow:hidden;
-	height:100%;
-	background:#151515;
-}
-#footer > .container{
-	display:block;
-	position:absolute;
-	top:0px;
-	left:50%;
-	margin-left: -450px;
-	height:130px;
-	width:900px;
-}
-#footer > .container > .data {
-	display:block;
-	position:relative;
-	height:85px;
-	background:url('../images/im.png') 26px center no-repeat;
-}
-#footer > .container > .social {
-	display:block;
-	position:absolute;
-	top:35px;
-	right:92px;
-}
-#footer > .container > .social > div {
-	display:block;
-	width:100px;
-	height:19px;
-	float:left;
-}
-#footer > .container > .social > div.google{
-	width:63px;
-}
-#footer > .container > .social > div.facebook{
-	width:90px;
-}
-#footer > .container > .data > span {
-	display:block;
-	position:absolute;
-	top:0px;
-	left:0px;
-	height:60px;
-	width:450px;
-	padding-top:25px;
-	padding-left:70px;
-	z-index:100;
-	color:#383838;
-	font:15px/18px "InsightRegular";
-}
-#footer > #mailbutton{
-	display:block;
-	width:900px;
-	margin:127px auto 0px;
-	padding-bottom:10px;
-	cursor:pointer;
-}
-#footer > #mailbutton > h4{
-	display:block;
-	padding-right:10px;
-	text-align:center;
-	letter-spacing:-8px;
-	font:100px/120px "InsightRegular";
-	color:#383838;
-}
-#footer > #mailbutton > #mailto{
-	display:block;
-	text-align:center;
-	letter-spacing:0px;
-	font:58px/75px "InsightRegular";
-	color:#383838;
-}
-#footer > #wetweetwhat{
-	display:block;
-	text-align:center;
-	letter-spacing:2px;
-	font:86px/80px "InsightRegular";
-	color:#383838;
-}
-#footer > #tweet{
-	display:block;
-	width:741px;
-	overflow:hidden;
-	margin:20px auto;
-	padding:10px 80px 0px 79px;
-}
-#footer > #tweet > p{
-	display:block;
-	width:207px;
-	padding:0px 20px;
-	float:left;
-	font:16px/18px "InsightRegular";
-	color:#383838;
-}
-#footer > #tweet > p > span{
-	display:block;
-	font:12px/30px "InsightRegular";
-	color:#383838;
-}
-#footer > #claim{
-	display:block;
-	width:700px;
-	padding:0px 00px;
-	margin:10px auto;
-	text-align:left;
-	font:18px/24px "InsightRegular";
-	color:#383838;
-}
-#footer > #claim > #seeya{
-	display:block;
-	float:right;
-	width:700px;
-	padding-right:5px;
-	text-align:left;
-	font:18px/24px "InsightRegular";
-	color:#383838;
-}
-#footer > .sep{
-	display:block;
-	width:698px;
-	height:10px;
-	margin:15px auto;
-	background-color:#383838;
-}
-#footer > .sep > .links{
-	display:block;
-	width:255px;
-	height:10px;
-	padding:0px 20px;
-	margin:0px auto;
-	background:#151515;
-}
-#footer > .sep > .links > a{
-	display:block;
-	float:right;
-	height:16px;
-	width:85px;
-}
-#footer > .sep > .links > a.behance {
-	background:url('../images/behance.png') center bottom no-repeat;
-}
-#footer > .sep > .links > a.twitter {
-	background:url('../images/twitter.png') center bottom no-repeat;
-}
-#footer > .sep > .links > a.facebook {
-	background:url('../images/facebook.png') center bottom no-repeat;
-}
-#page-content{
-	display:block;
-	position:relative;
-	width:100%;
+#header {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
 }
 
-.project-container{
-	display:block;
-	position:relative;
-	overflow:hidden;
-	height:650px;
-	width:100%;
+#header>#logo {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -42px;
+    /* 	margin-left:-450px; */
+    width: 85px;
+    height: 85px;
+    background: #000000;
+    cursor: pointer;
 }
-.project{
-	display:block;
-	position:relative;
-	overflow:hidden;
-	height:650px;
-	width:100%;
+
+#header>#logo>div {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 85px;
+    height: 85px;
+    background: url('../images/im.png') center center no-repeat transparent;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari and Chrome */
+    -moz-transform: rotate(0deg);
+    /* Firefox */
+    -o-transform: rotate(0deg);
+    /* Opera */
 }
+
+#header>#logo>#loading {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 36px;
+    height: 36px;
+    background: url('../images/im_loading.png') center top no-repeat #000000;
+}
+
+#header>#menu {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 50%;
+    margin-left: -363px;
+    width: 813px;
+    height: 85px;
+    background: #000000;
+    cursor: pointer;
+    text-align: center;
+    color: #838383;
+    opacity: 0;
+}
+
+#header>#menu>a {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 85px;
+    overflow: hidden;
+    padding: 0px 10px;
+    font: 34px/85px "InsightRegular";
+    text-align: center;
+    color: #838383;
+}
+
+#header>#menu>a.contact {
+    width: 400px;
+}
+
+#header>#menu>a>div {
+    display: block;
+    position: absolute;
+    top: 85px;
+    width: 200px;
+    height: 85px;
+    overflow: hidden;
+    font: 34px/85px "InsightRegular";
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#header>#menu>span {
+    display: inline-block;
+    padding: 0px 2px;
+    font: 34px/85px "InsightRegular";
+    color: #838383;
+}
+
+#header>#menu>a:hover {
+    color: #ffffff;
+}
+
+#footer-container {
+    background: #151515;
+}
+
+#footer-container>.project {
+    height: auto;
+}
+
+#footer-container>.project>.block {
+    cursor: default;
+}
+
+#footer {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    background: #151515;
+}
+
+#footer>.container {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -450px;
+    height: 130px;
+    width: 900px;
+}
+
+#footer>.container>.data {
+    display: block;
+    position: relative;
+    height: 85px;
+    background: url('../images/im.png') 26px center no-repeat;
+}
+
+#footer>.container>.social {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 92px;
+}
+
+#footer>.container>.social>div {
+    display: block;
+    width: 100px;
+    height: 19px;
+    float: left;
+}
+
+#footer>.container>.social>div.google {
+    width: 63px;
+}
+
+#footer>.container>.social>div.facebook {
+    width: 90px;
+}
+
+#footer>.container>.data>span {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 450px;
+    padding-top: 25px;
+    padding-left: 70px;
+    z-index: 100;
+    color: #383838;
+    font: 15px/18px "InsightRegular";
+}
+
+#footer>#mailbutton {
+    display: block;
+    width: 900px;
+    margin: 127px auto 0px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#footer>#mailbutton>h4 {
+    display: block;
+    padding-right: 10px;
+    text-align: center;
+    letter-spacing: -8px;
+    font: 100px/120px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#mailbutton>#mailto {
+    display: block;
+    text-align: center;
+    letter-spacing: 0px;
+    font: 58px/75px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#wetweetwhat {
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    font: 86px/80px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#tweet {
+    display: block;
+    width: 741px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 10px 80px 0px 79px;
+}
+
+#footer>#tweet>p {
+    display: block;
+    width: 207px;
+    padding: 0px 20px;
+    float: left;
+    font: 16px/18px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#tweet>p>span {
+    display: block;
+    font: 12px/30px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#claim {
+    display: block;
+    width: 700px;
+    padding: 0px 00px;
+    margin: 10px auto;
+    text-align: left;
+    font: 18px/24px "InsightRegular";
+    color: #383838;
+}
+
+#footer>#claim>#seeya {
+    display: block;
+    float: right;
+    width: 700px;
+    padding-right: 5px;
+    text-align: left;
+    font: 18px/24px "InsightRegular";
+    color: #383838;
+}
+
+#footer>.sep {
+    display: block;
+    width: 698px;
+    height: 10px;
+    margin: 15px auto;
+    background-color: #383838;
+}
+
+#footer>.sep>.links {
+    display: block;
+    width: 255px;
+    height: 10px;
+    padding: 0px 20px;
+    margin: 0px auto;
+    background: #151515;
+}
+
+#footer>.sep>.links>a {
+    display: block;
+    float: right;
+    height: 16px;
+    width: 85px;
+}
+
+#footer>.sep>.links>a.behance {
+    background: url('../images/behance.png') center bottom no-repeat;
+}
+
+#footer>.sep>.links>a.twitter {
+    background: url('../images/twitter.png') center bottom no-repeat;
+}
+
+#footer>.sep>.links>a.facebook {
+    background: url('../images/facebook.png') center bottom no-repeat;
+}
+
+#page-content {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.project-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    width: 100%;
+}
+
+.project {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    width: 100%;
+}
+
 .block {
-	display:block;
-	position:absolute;
-	height:650px;
-	right:0px;
-	top:0px;
-	bottom:0px;
-	left:0%;
-	cursor:pointer;
-	overflow:hidden;
-	color:#ffffff;
+    display: block;
+    position: absolute;
+    height: 650px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0%;
+    cursor: pointer;
+    overflow: hidden;
+    color: #ffffff;
 }
+
 .block.next {
-	left:100%;
-}
-.block.prev {
-}
-.block > .highlight{
-	display:block;
-	position:relative;
-	padding-top:211px;
-	height:439px;
-}
-.project-container > .project > .block.share{
-	background:#000000;
-}
-.project-container > .project > .block.share > div.social{
-	display:block;
-	position:absolute;
-	top:0px;
-	left:50%;
-	margin-left:-200px;
-	height:650px;
-	width:400px;
-	background:url('../images/share-bollonzo.png') center center no-repeat;
-}
-.project-container > .project > .block.share > div.social > .twitter{
-	display:block;
-	position:relative;
-	margin:20px auto;
-	width:55px;
-}
-.project-container > .project > .block.share > div.social > .facebook{
-	display:block;
-	position:relative;
-	margin:250px auto 0px;
-	width:49px;
-}
-.project-container > .project > .block.share > div.social > .likethis{
-	display:block;
-	width:400px;
-	position:absolute;
-	top:137px;
-	font:48px/48px "InsightRegular";
-	text-align:center;
-	color:#ffffff;
-}
-.project-container > .project > .block.share > div.social > .sharethis{
-	display:block;
-	width:400px;
-	position:absolute;
-	top:460px;
-	font:48px/48px "InsightRegular";
-	text-align:center;
-	color:#ffffff;
+    left: 100%;
 }
 
+.block.prev {}
 
-.staff > .block {
-	background:#000000;
-	height:630px;
-	padding-top:20px;
+.block>.highlight {
+    display: block;
+    position: relative;
+    padding-top: 211px;
+    height: 439px;
 }
+
+.project-container>.project>.block.share {
+    background: #000000;
+}
+
+.project-container>.project>.block.share>div.social {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -200px;
+    height: 650px;
+    width: 400px;
+    background: url('../images/share-bollonzo.png') center center no-repeat;
+}
+
+.project-container>.project>.block.share>div.social>.twitter {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    width: 55px;
+}
+
+.project-container>.project>.block.share>div.social>.facebook {
+    display: block;
+    position: relative;
+    margin: 250px auto 0px;
+    width: 49px;
+}
+
+.project-container>.project>.block.share>div.social>.likethis {
+    display: block;
+    width: 400px;
+    position: absolute;
+    top: 137px;
+    font: 48px/48px "InsightRegular";
+    text-align: center;
+    color: #ffffff;
+}
+
+.project-container>.project>.block.share>div.social>.sharethis {
+    display: block;
+    width: 400px;
+    position: absolute;
+    top: 460px;
+    font: 48px/48px "InsightRegular";
+    text-align: center;
+    color: #ffffff;
+}
+
+.staff>.block {
+    background: #000000;
+    height: 630px;
+    padding-top: 20px;
+}
+
 #staff-cover {
-	background:url('../images/quienescover.jpg') top center no-repeat #000000;
-	height:650px;
-	padding-top:0px;
-}
-#staff-cover > .highlight {
-	background:url('../images/quienescover.jpg') top center no-repeat #000000;
+    background: url(../images/quienescover.jpg) top center no-repeat #000000;
+    height: 650px;
+    padding-top: 0px;
 }
 
+#staff-cover>.highlight {
+    background: url(../images/quienescover.jpg) top center no-repeat #000000;
+}
 
 div.staff-container {
-	display:block;
-	position:relative;
-	margin:200px auto 0px;
-	width:920px;
-}
-div.staff-container > img{
-	display:block;
-	position:absolute;
-	top:10px;
-	left:10px;
-}
-div.staff-container > h4{
-	display:block;
-	position:relative;
-	margin-left:156px;
-	color:#ffffff;
-	letter-spacing:-1px;
-	font:75px/75px "InsightRegular";
-	text-transform:lowercase;
-}
-div.staff-container > h5{
-	display:block;
-	position:relative;
-	margin-left:156px;
-	color:#ffffff;
-	font:50px/45px "InsightRegular";
-}
-div.staff-container > p{
-	display:block;
-	position:relative;
-	padding:20px 0px;
-	margin-left:156px;
-	color:#ffffff;
-	font:12px/16px "InsightRegular";
-}
-div.staff-container > a{
-	display:block;
-	position:relative;
-	margin-left:156px;
-	color:#ffffff;
-	font:17px/17px "InsightRegular";
+    display: block;
+    position: relative;
+    margin: 200px auto 0px;
+    width: 920px;
 }
 
+div.staff-container>img {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
-.title-dx{
-	display:block;
-	position:relative;
-	margin:100px auto;
-	width:900px;
-	text-align:right;
+div.staff-container>h4 {
+    display: block;
+    position: relative;
+    margin-left: 156px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font: 75px/75px "InsightRegular";
+    text-transform: lowercase;
 }
-.title-sx{
-	display:block;
-	position:relative;
-	margin:100px auto;
-	width:900px;
-	text-align:left;
-}
-.title-dx > span{
-	right:0px;
-}
-.title-sx > span{
-	left:0px;
-}
-span.project-name{
-	display:inline-block;
-	height:42px;
-	padding:15px 15px;
-	font:60px/30px "InsightRegular";
-	color:#ffffff;
-	background-color:#000;
-}
-span.project-name.tall{
-	height:90px;
-}
-span.project-name.first{
-	position:absolute;
-	top:0px;
-}
-span.project-name.second{
-	position:absolute;
-	top:64px;
-}
-span.description{
-	display:inline-block;
-	position:absolute;
-	top:136px;
-	padding:10px 10px;
-	font:28px/28px "InsightRegular";
-	color:#ffffff;
-	background-color:#000;
-}
-span.description.under-tall{
-	top:170px;
-}
-div.bollonzo{
-	display:block;
-	position:absolute;
-	top:40px;
-	right:-140px;
-	height:650px;
-	width:100%;
-	overflow:hidden;
-	/*background:url('../images/bollonzo.png') center center no-repeat transparent;*/
-	transition: all 0s;
-	-ms-transition: all 0s;
-	-webkit-transition: all 0s;
-	-moz-transition: all 0s;
-	-o-transition: all 0s;
-	transform:rotate(0deg) scale(1,1);
-	-ms-transform:rotate(0deg) scale(1,1); /* IE 9 */
-	-webkit-transform:rotate(0deg) scale(1,1); /* Safari and Chrome */
-	-moz-transform:rotate(0deg) scale(1,1); /* Firefox */
-	-o-transform:rotate(0deg) scale(1,1); /* Opera */
 
+div.staff-container>h5 {
+    display: block;
+    position: relative;
+    margin-left: 156px;
+    color: #ffffff;
+    font: 50px/45px "InsightRegular";
 }
-div.bollonzo > div {
-	display:block;
-	position:relative;
-	width:600px;
-	height:650px;
-	/*background:url('../images/bollonzo.png') center center no-repeat transparent; */
+
+div.staff-container>p {
+    display: block;
+    position: relative;
+    padding: 20px 0px;
+    margin-left: 156px;
+    color: #ffffff;
+    font: 12px/16px "InsightRegular";
 }
-div.bollonzo > div > span{
-	display:block;
-	position:absolute;
-	top:260px;
-	left:422px;
-	height:132
-	width:600px;
-	text-align:left;
-	font:34px/34px "InsightRegular";
-	color:#ffffff;
+
+div.staff-container>a {
+    display: block;
+    position: relative;
+    margin-left: 156px;
+    color: #ffffff;
+    font: 17px/17px "InsightRegular";
 }
+
+.title-dx {
+    display: block;
+    position: relative;
+    margin: 100px auto;
+    width: 900px;
+    text-align: right;
+}
+
+.title-sx {
+    display: block;
+    position: relative;
+    margin: 100px auto;
+    width: 900px;
+    text-align: left;
+}
+
+.title-dx>span {
+    right: 0px;
+}
+
+.title-sx>span {
+    left: 0px;
+}
+
+span.project-name {
+    display: inline-block;
+    height: 42px;
+    padding: 15px 15px;
+    font: 60px/30px "InsightRegular";
+    color: #ffffff;
+    background-color: #000;
+}
+
+span.project-name.tall {
+    height: 90px;
+}
+
+span.project-name.first {
+    position: absolute;
+    top: 0px;
+}
+
+span.project-name.second {
+    position: absolute;
+    top: 64px;
+}
+
+span.description {
+    display: inline-block;
+    position: absolute;
+    top: 136px;
+    padding: 10px 10px;
+    font: 28px/28px "InsightRegular";
+    color: #ffffff;
+    background-color: #000;
+}
+
+span.description.under-tall {
+    top: 170px;
+}
+
+div.bollonzo {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -140px;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+    /*background:url('../images/bollonzo.png') center center no-repeat transparent;*/
+    transition: all 0s;
+    -ms-transition: all 0s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transform: rotate(0deg) scale(1, 1);
+    -ms-transform: rotate(0deg) scale(1, 1);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg) scale(1, 1);
+    /* Safari and Chrome */
+    -moz-transform: rotate(0deg) scale(1, 1);
+    /* Firefox */
+    -o-transform: rotate(0deg) scale(1, 1);
+    /* Opera */
+}
+
+div.bollonzo>div {
+    display: block;
+    position: relative;
+    width: 600px;
+    height: 650px;
+    /*background:url('../images/bollonzo.png') center center no-repeat transparent; */
+}
+
+div.bollonzo>div>span {
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: 422px;
+    height: 132 width: 600px;
+    text-align: left;
+    font: 34px/34px "InsightRegular";
+    color: #ffffff;
+}
+
 
 /* mobile fixes */
-div.bollonzo > div {
-	display:block;
-	position:absolute;
-	width:100%;
-	height:650px;
-	background:url('../images/bollonzo.png') center center no-repeat transparent;
-	background-size:150px 150px;
+
+div.bollonzo>div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: url('../images/bollonzo.png') center center no-repeat transparent;
+    background-size: 150px 150px;
 }
+
 .block {
-	transform-origin:top left 0;
-	-ms-transform-origin:top left 0; /* IE 9 */
-	-webkit-transform-origin:top left 0; /* Safari and Chrome */
-	-moz-transform-origin:top left 0; /* Firefox */
-	-o-transform-origin:top left 0; /* Opera */
-	transform:rotateY(0deg) rotateX(0deg);
-	-ms-transform:rotateY(0deg) rotateX(0deg); /* IE 9 */
-	-webkit-transform:rotateY(0deg) rotateX(0deg); /* Safari and Chrome */
-	-moz-transform:rotateY(0deg) rotateX(0deg); /* Firefox */
-	-o-transform:rotateY(0deg) rotateX(0deg); /* Opera */
-
-	transition-property: all, transform, opacity;
-	transition-duration: 0.4s, 0.4s, 0.4s ;
-	transition-timing-function:ease-in-out;
-
-	-webkit-transition-property: all, -webkit-transform, opacity;
-	-webkit-transition-duration: 0.4s, 0.4s, 0.4s ;
-	-webkit-transition-timing-function:ease-in-out;
-
-	-moz-transition-property: all, -moz-transform, opacity;
-	-moz-transition-duration: 0.4s, 0.4s, 0.4s ;
-	-moz-transition-timing-function:ease-in-out;
-
-	-ms-transition-property: all, -ms-transform, opacity;
-	-ms-transition-duration: 0.4s, 0.4s, 0.4s ;
-	-ms-transition-timing-function:ease-in-out;
-
-	-o-transition-property: all, -o-transform, opacity;
-	-o-transition-duration: 0.4s, 0.4s, 0.4s ;
-	-o-transition-timing-function:ease-in-out;
-}
-#layer{
-	transition: top 0.8s ease-in-out;
-	-ms-transition: top 0.8s ease-in-out;
-	-webkit-transition: top 0.8s ease-in-out;
-	-moz-transition: top 0.8s ease-in-out;
-	-o-transition: top 0.8s ease-in-out;
-}
-#logo, #logo > div{
-	transition: all 0.4s;
-	-ms-transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	-o-transition: all 0.4s;
-}
-#logo > #loading{
-	transition:none;
-	-ms-transition:none;
-	-webkit-transition:none;
-	-moz-transition:none;
-	-o-transition:none;
-}
-#menu{
-	transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+    transform-origin: top left 0;
+    -ms-transform-origin: top left 0;
+    /* IE 9 */
+    -webkit-transform-origin: top left 0;
+    /* Safari and Chrome */
+    -moz-transform-origin: top left 0;
+    /* Firefox */
+    -o-transform-origin: top left 0;
+    /* Opera */
+    transform: rotateY(0deg) rotateX(0deg);
+    -ms-transform: rotateY(0deg) rotateX(0deg);
+    /* IE 9 */
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(0deg) rotateX(0deg);
+    /* Firefox */
+    -o-transform: rotateY(0deg) rotateX(0deg);
+    /* Opera */
+    transition-property: all, transform, opacity;
+    transition-duration: 0.4s, 0.4s, 0.4s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-property: all, -webkit-transform, opacity;
+    -webkit-transition-duration: 0.4s, 0.4s, 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: all, -moz-transform, opacity;
+    -moz-transition-duration: 0.4s, 0.4s, 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-property: all, -ms-transform, opacity;
+    -ms-transition-duration: 0.4s, 0.4s, 0.4s;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-property: all, -o-transform, opacity;
+    -o-transition-duration: 0.4s, 0.4s, 0.4s;
+    -o-transition-timing-function: ease-in-out;
 }
 
-.current .block div.bollonzo{
-	top:-650px;
-	transform:rotate(360deg) scale(1,1);
-	-ms-transform:rotate(360deg) scale(1,1); /* IE 9 */
-	-webkit-transform:rotate(360deg) scale(1,1); /* Safari and Chrome */
-	-moz-transform:rotate(360deg) scale(1,1); /* Firefox */
-	-o-transform:rotate(360deg) scale(1,1); /* Opera */
+#layer {
+    transition: top 0.8s ease-in-out;
+    -ms-transition: top 0.8s ease-in-out;
+    -webkit-transition: top 0.8s ease-in-out;
+    -moz-transition: top 0.8s ease-in-out;
+    -o-transition: top 0.8s ease-in-out;
 }
 
-.block > .highlight{
-	transition: opacity 0.5s;
-	-ms-transition: opacity 0.5s;
-	-webkit-transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	opacity:0;
-	filter:alpha(opacity=0);
-}
-.current .block > .highlight{
-	opacity:1;
-	filter:alpha(opacity=100);
+#logo,
+#logo>div {
+    transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
 }
 
-.block > .highlight > div > span{
-	margin-top:-20px;
-	opacity:0;
-	filter:alpha(opacity=0);
-	transition: all 0.3s ease-in-out 0.3s;
-	-ms-transition: all 0.3s ease-in-out 0.3s;
-	-webkit-transition: all 0.3s ease-in-out 0.3s;
-	-moz-transition: all 0.3s ease-in-out 0.3s;
-	-o-transition: all 0.3s ease-in-out 0.3s;
-}
-.current .block > .highlight > div > span {
-	margin-top:0px;
-	opacity:1;
-	filter:alpha(opacity=1);
+#logo>#loading {
+    transition: none;
+    -ms-transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
 }
 
+#menu {
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
 
+.current .block div.bollonzo {
+    top: -650px;
+    transform: rotate(360deg) scale(1, 1);
+    -ms-transform: rotate(360deg) scale(1, 1);
+    /* IE 9 */
+    -webkit-transform: rotate(360deg) scale(1, 1);
+    /* Safari and Chrome */
+    -moz-transform: rotate(360deg) scale(1, 1);
+    /* Firefox */
+    -o-transform: rotate(360deg) scale(1, 1);
+    /* Opera */
+}
 
+.block>.highlight {
+    transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
 
+.current .block>.highlight {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
 
+.block>.highlight>div>span {
+    margin-top: -20px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all 0.3s ease-in-out 0.3s;
+    -ms-transition: all 0.3s ease-in-out 0.3s;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    -o-transition: all 0.3s ease-in-out 0.3s;
+}
 
+.current .block>.highlight>div>span {
+    margin-top: 0px;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
