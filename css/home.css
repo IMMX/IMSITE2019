@@ -105,8 +105,6 @@ Author URI: http://
     color: #838383;
 }
 
-#header>#menu>a.contact {}
-
 #header>#menu>span {
     display: inline-block;
     padding: 0px 2px;
@@ -485,7 +483,7 @@ Author URI: http://
     font: 34px/34px "InsightRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
     color: #333;
-    background-color: #transparent;
+    background-color: transparent;
 }
 
 
@@ -761,11 +759,11 @@ Author URI: http://
 }
 
 #proyecto10-cover {
-    background: url('../images/proyecto10/portada_BW.jpg') top center no-repeat #3d3d3d; //gris
+    background: url('../images/proyecto10/portada_BW.jpg') top center no-repeat #3d3d3d;
 }
 
 #proyecto10-cover>.highlight {
-    background: url('../images/proyecto10/portada.jpg') top center no-repeat #660403; //rojo
+    background: url('../images/proyecto10/portada.jpg') top center no-repeat #660403;
 }
 
 .proyecto10>.loaded.second {
@@ -773,23 +771,23 @@ Author URI: http://
 }
 
 .proyecto10>.loaded.third {
-    background: url('../images/proyecto10/interior2.jpg') top center no-repeat #372714; //cafe 
+    background: url('../images/proyecto10/interior2.jpg') top center no-repeat #372714;
 }
 
 .proyecto10>.loaded.fourth {
-    background: url('../images/proyecto10/interior3.jpg') top center no-repeat #002A51; //azul
+    background: url('../images/proyecto10/interior3.jpg') top center no-repeat #002A51;
 }
 
 .proyecto10>.loaded.fifth {
-    background: url('../images/proyecto10/interior4.jpg') top center no-repeat #002A51; //azul
+    background: url('../images/proyecto10/interior4.jpg') top center no-repeat #002A51;
 }
 
 .proyecto10>.loaded.sixth {
-    background: url('../images/proyecto10/interior5.jpg') top center no-repeat #660403; //rojo
+    background: url('../images/proyecto10/interior5.jpg') top center no-repeat #660403;
 }
 
 .proyecto10>.loaded.seventh {
-    background: url('../images/proyecto10/interior6.jpg') top center no-repeat #002A51; //azul
+    background: url('../images/proyecto10/interior6.jpg') top center no-repeat #002A51;
 }
 
 .staff>.block {
@@ -933,6 +931,7 @@ div.bollonzo {
     overflow: hidden;
     /*background:url('../images/bollonzo-line.png') center center no-repeat transparent; */
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 div.bollonzo>div {
