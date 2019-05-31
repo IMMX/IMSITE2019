@@ -1,7 +1,0 @@
-# COMMENT: These are two redirect rules with all the fields expanded
-# COMMENT: This is an expanded syntax for rules that won't fit in one line
-[[redirects]]
-  from = "/c/screens/*"
-  to = "https://files.insightmedia.com.mx/c/screens/:splat"
-  status = 301
-  force = false
