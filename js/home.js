@@ -308,10 +308,10 @@ function developerFunctions() {
 
 function initSizes() {
 
-    // if( window.getSize().x <= 1140 )
-    // 	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','none');
-    // else
-    // 	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','block');
+     if( window.getSize().x <= 1140 )
+     	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','none');
+     else
+     	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','block');
 
     $(document.body).setStyles({
         'width': window.getSize().x,
