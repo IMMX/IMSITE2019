@@ -20,8 +20,8 @@ var toLoad = [];
 var mouseTimeout;
 var actualAnchor = '';
 
-var timeOfActivate = 500;
-var timeOfVerticalScroll = 400;
+var timeOfActivate = 50;
+var timeOfVerticalScroll = 40;
 
 var newStyles = new Hash({
     'webkitTransform': 'rotate(@deg)',
@@ -48,27 +48,27 @@ window.addEvent('domready', function(event) {
     }, 100);
 
 
-    var firstLoad = new Element('div', { 'class': 'loading-claim', 'html': 'Interactive Agency<span></span>' }).set('tween', { duration: 400 }).set('morph', { duration: 400 }).setStyles({
+    var firstLoad = new Element('div', { 'class': 'loading-claim', 'html': 'Agencia Digital<span></span>' }).set('tween', { duration: 40 }).set('morph', { duration: 40 }).setStyles({
         'z-index': 200,
         'position': 'fixed',
         'opacity': 0,
         'top': 110,
-        'left': window.getSize().x / 2 - 150
+        'left': window.getSize().x / 2 - 10
     }).inject($(document.body)).morph({ 'opacity': 1, 'left': window.getSize().x / 2 - 180 });
     (function() {
-        firstLoad.tween('left', window.getSize().x / 2 - 170);
+        firstLoad.tween('left', window.getSize().x / 2 - 10);
         (function() {
             firstLoad.getFirst('span').fade('in');
-            var secondLoad = new Element('div', { 'class': 'loading-claim', 'html': 'that creates great online brand experiences.' }).set('morph', { duration: 400 }).setStyles({
+            var secondLoad = new Element('div', { 'class': 'loading-claim', 'html': 'que disfruta diseñar sitios web que venden.' }).set('morph', { duration: 40 }).setStyles({
                 'z-index': 200,
                 'position': 'fixed',
                 'opacity': 0,
                 'top': 110,
                 'left': window.getSize().x / 2 - 125
             }).inject($(document.body)).morph({ 'opacity': 1, 'left': window.getSize().x / 2 - 55 });
-            (function() {}).delay(400);
-        }).delay(100);
-    }).delay(1000);
+            (function() {}).delay(40);
+        }).delay(10);
+    }).delay(20);
 
 
     var loadingLength = 0;
@@ -114,13 +114,13 @@ window.addEvent('domready', function(event) {
             'webkitTransform': [0, 0],
             'MozTransform': [0, 0]
         });
-    }).delay(400);
+    }).delay(40);
 
 
     (function() {
         $$('.loading-claim').fade('out');
         $('logo').set('tween', {
-            duration: 400,
+            duration: 40,
             transition: Fx.Transitions.Expo.easeInOut,
             onComplete: function() {
 
@@ -134,15 +134,15 @@ window.addEvent('domready', function(event) {
                 (function() {
                     $('menu').tween('width', 0);
                     $('page-content').setStyle('height', 'auto');
-                }).delay(1000);
+                }).delay(10);
                 (function() {
                     window.scrollTo(0, 0);
                     $('layer').set('tween', {
-                        duration: 800,
+                        duration: 80,
                         transition: Fx.Transitions.Expo.easeInOut,
                         onComplete: function() {
                             var scroll = new Fx.Scroll($$('.project-container')[0], {
-                                duration: 800,
+                                duration: 80,
                                 wheelStops: false,
                                 transition: Fx.Transitions.Expo.easeInOut,
                                 onStart: function() {
@@ -155,7 +155,7 @@ window.addEvent('domready', function(event) {
                                     });
 
                                     var firstBlock = toLoad.shift();
-                                    // loaderSpinner = new Spinner(opts).spin( $$('.block')[ firstBlock.retrieve( 'indexBlock' ) ] );
+                                    loaderSpinner = new Spinner(opts).spin( $$('.block')[ firstBlock.retrieve( 'indexBlock' ) ] );
                                     firstBlock.set('src', firstBlock.retrieve('url'));
 
                                     setInterval(function() { checkHash(); }, 100);
@@ -171,7 +171,7 @@ window.addEvent('domready', function(event) {
 
             }
         }).tween('margin-left', -450);
-    }).delay(1200);
+    }).delay(20);
 
 
 
@@ -182,7 +182,7 @@ window.addEvent('domready', function(event) {
 
     $$('.project-container')[0].scrollTo(window.getSize().x * 2, 0);
 
-    new Element("script", { "type": "text/javascript", "async": true, "src": "http://twitter.com/status/user_timeline/insightmedia_mx.json?count=10&callback=twitterCallBack" }).inject($(document.head), "bottom");
+    // new Element("script", { "type": "text/javascript", "async": true, "src": "http://twitter.com/status/user_timeline/insightmedia_mx.json?count=10&callback=twitterCallBack" }).inject($(document.head), "bottom");
 
 
 }).addEvent('resize', function(event) {
@@ -264,7 +264,7 @@ function checkHash() {
         anchor = $$('div[name="' + location.hash.substring(1) + '"]');
         if (anchor.length) {
             var scroll = new Fx.Scroll(window, {
-                duration: 800,
+                duration: 80,
                 wheelStops: false,
                 transition: Fx.Transitions.Expo.easeInOut,
                 onStart: function() {
@@ -300,18 +300,12 @@ function twitterCallBack(data) {
 
 };
 
-
-function developerFunctions() {
-
-}
-
-
 function initSizes() {
 
-     if( window.getSize().x <= 1140 )
-     	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','none');
-     else
-     	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','block');
+    // if( window.getSize().x <= 1140 )
+    // 	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','none');
+    // else
+    // 	$$('a.css_awards_light, a.css_awards_dark').setStyle('display','block');
 
     $(document.body).setStyles({
         'width': window.getSize().x,
@@ -446,7 +440,7 @@ function initAnimations() {
     if (Browser.Platform.ios) $('header').setStyle('position', 'absolute');
 
 
-    $$('.data > span').set('morph', { duration: 500, transition: Fx.Transitions.Expo.easeInOut });
+    $$('.data > span').set('morph', { duration: 50, transition: Fx.Transitions.Expo.easeInOut });
 
     $('mailbutton').addEvent('mouseenter', function() {
 
@@ -487,7 +481,7 @@ function initAnimations() {
 
             (function() {
                 Element.enableCustomEvents();
-            }).delay(1500);
+            }).delay(50);
         }
 
         return;
@@ -504,7 +498,7 @@ function initAnimations() {
 
         (function() {
             Element.enableCustomEvents();
-        }).delay(1500);
+        }).delay(50);
 
 
     });
@@ -513,14 +507,14 @@ function initAnimations() {
 
         event.stop();
 
-        window.location = "https://insightmedia.com.mx/reels";
+        window.location = "https://video.insightmedia.com.mx/2018/reels/";
 
     });
 
     $('menu').set('tween', { duration: 150, transition: Fx.Transitions.Expo.easeInOut }).setStyle('width', 0);
     $$('#menu > *').set('tween', { duration: 150, transition: Fx.Transitions.Expo.easeInOut }).setStyle('opacity', 0);
 
-    $$('#logo > div').set('morph', { duration: 400, transition: Fx.Transitions.Expo.easeInOut }).set('tween', { duration: 400, transition: Fx.Transitions.Expo.easeInOut });
+    $$('#logo > div').set('morph', { duration: 40, transition: Fx.Transitions.Expo.easeInOut }).set('tween', { duration: 400, transition: Fx.Transitions.Expo.easeInOut });
     $('logo').addEvent('click', function(event) {
 
         if (Browser.Platform.ios) return;
@@ -530,7 +524,7 @@ function initAnimations() {
             timerAutoSlide = false;
         } else {
             autoSlide();
-            timerAutoSlide = setInterval(function() { autoSlide(); }, 3000);
+            timerAutoSlide = setInterval(function() { autoSlide(); }, 300);
         }
         playPauseButton();
 
@@ -995,7 +989,7 @@ function scrollAnchor() {
 
                     if ($$('.project-container')[oldProject].getScroll().x > 0) {
                         var scroll = new Fx.Scroll($$('.project-container')[oldProject], {
-                            duration: 1500,
+                            duration: 50,
                             wheelStops: false,
                             transition: Fx.Transitions.Expo.easeInOut,
                             onStart: function() {
@@ -1084,7 +1078,7 @@ function scrollManager() {
 
             scrollAnchor();
 
-        }, 250);
+        }, 25);
 
     });
 
