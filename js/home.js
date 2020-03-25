@@ -182,7 +182,7 @@ window.addEvent('domready', function(event) {
 
     $$('.project-container')[0].scrollTo(window.getSize().x * 2, 0);
 
-    new Element("script", { "type": "text/javascript", "async": true, "src": "http://twitter.com/status/user_timeline/insightmedia_mx.json?count=10&callback=twitterCallBack" }).inject($(document.head), "bottom");
+    new Element("script", { "type": "text/javascript", "async": true, "src": "https://twitter.com/status/user_timeline/insightmedia_mx.json?count=10&callback=twitterCallBack" }).inject($(document.head), "bottom");
 
 
 }).addEvent('resize', function(event) {
@@ -281,21 +281,21 @@ function checkHash() {
 
 function twitterCallBack(data) {
     $$("p.tweet1").set('html', data[0].text.replace("/([\\n]+)/", "<br />").replace(
-        /http:\/\/([^\s<>]*)/i, "<a href=\"http://$1\" target=\"_blank\">$1</a>"
+        /https:\/\/([^\s<>]*)/i, "<a href=\"https://$1\" target=\"_blank\">$1</a>"
     ).replace(
-        /www\.([^\s<>]*)/i, "<a href=\"http://www.$1\" target=\"_blank\">$1</a>"
+        /www\.([^\s<>]*)/i, "<a href=\"https://www.$1\" target=\"_blank\">$1</a>"
     ) + '<span>posted on ' + Date.parse(data[0].created_at).format("%m.%d.%Y") + '</span>');
 
     $$("p.tweet2").set('html', data[1].text.replace("/([\\n]+)/", "<br />").replace(
-        /http:\/\/([^\s<>]*)/i, "<a href=\"http://$1\" target=\"_blank\">$1</a>"
+        /https:\/\/([^\s<>]*)/i, "<a href=\"https://$1\" target=\"_blank\">$1</a>"
     ).replace(
-        /www\.([^\s<>]*)/i, "<a href=\"http://www.$1\" target=\"_blank\">$1</a>"
+        /www\.([^\s<>]*)/i, "<a href=\"https://www.$1\" target=\"_blank\">$1</a>"
     ) + '<span>posted on ' + Date.parse(data[1].created_at).format("%m.%d.%Y") + '</span>');
 
     $$("p.tweet3").set('html', data[2].text.replace("/([\\n]+)/", "<br />").replace(
-        /http:\/\/([^\s<>]*)/i, "<a href=\"http://$1\" target=\"_blank\">$1</a>"
+        /https:\/\/([^\s<>]*)/i, "<a href=\"https://$1\" target=\"_blank\">$1</a>"
     ).replace(
-        /www\.([^\s<>]*)/i, "<a href=\"http://www.$1\" target=\"_blank\">$1</a>"
+        /www\.([^\s<>]*)/i, "<a href=\"https://www.$1\" target=\"_blank\">$1</a>"
     ) + '<span>posted on ' + Date.parse(data[2].created_at).format("%m.%d.%Y") + '</span>');
 
 };

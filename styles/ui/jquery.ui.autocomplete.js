@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Autocomplete 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Autocomplete
+ * https://docs.jquery.com/UI/Autocomplete
  *
  * Depends:
  *	jquery.ui.core.js
@@ -202,7 +202,7 @@ $.widget( "ui.autocomplete", {
 				}
 			})
 			.zIndex( this.element.zIndex() + 1 )
-			// workaround for jQuery bug #5781 http://dev.jquery.com/ticket/5781
+			// workaround for jQuery bug #5781 https://dev.jquery.com/ticket/5781
 			.css({ top: 0, left: 0 })
 			.hide()
 			.data( "menu" );
@@ -453,11 +453,11 @@ $.extend( $.ui.autocomplete, {
  * it for the next release. You're welcome to give it a try anyway and give us feedback,
  * as long as you're okay with migrating your code later on. We can help with that, too.
  *
- * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2010, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Menu
+ * https://docs.jquery.com/UI/Menu
  *
  * Depends:
  *	jquery.ui.core.js

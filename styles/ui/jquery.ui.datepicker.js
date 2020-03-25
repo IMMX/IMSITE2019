@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Datepicker 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Datepicker
+ * https://docs.jquery.com/UI/Datepicker
  *
  * Depends:
  *	jquery.ui.core.js
@@ -289,7 +289,7 @@ $.extend(Datepicker.prototype, {
 			this._disableDatepicker( target );
 		}
 		// Set display:block in place of inst.dpDiv.show() which won't work on disconnected elements
-		// http://bugs.jqueryui.com/ticket/7552 - A Datepicker created on a detached div has zero height
+		// https://bugs.jqueryui.com/ticket/7552 - A Datepicker created on a detached div has zero height
 		inst.dpDiv.css( "display", "block" );
 	},
 

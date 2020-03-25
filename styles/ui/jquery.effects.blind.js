@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Effects Blind 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Effects/Blind
+ * https://docs.jquery.com/UI/Effects/Blind
  *
  * Depends:
  *	jquery.effects.core.js

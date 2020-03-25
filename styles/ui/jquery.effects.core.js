@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Effects 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Effects/
+ * https://docs.jquery.com/UI/Effects/
  */
 ;jQuery.effects || (function($, undefined) {
 
@@ -37,7 +37,7 @@ function(i, attr) {
 
 // Color Conversion functions from highlightFade
 // By Blair Mitchelmore
-// http://jquery.offput.ca/highlightFade/
+// https://jquery.offput.ca/highlightFade/
 
 // Parse strings looking for color tuples [255,255,255]
 function getRGB(color) {
@@ -89,7 +89,7 @@ function getColor(elem, attr) {
 
 // Some named colors to work with
 // From Interface by Stefan Petre
-// http://interface.eyecon.ro/
+// https://interface.eyecon.ro/
 
 var colors = {
 	aqua:[0,255,255],
@@ -213,7 +213,7 @@ function filterStyles(styles) {
 }
 
 function styleDifference(oldStyle, newStyle) {
-	var diff = { _: 0 }, // http://dev.jquery.com/ticket/5459
+	var diff = { _: 0 }, // https://dev.jquery.com/ticket/5459
 		name;
 
 	for (name in newStyle) {
@@ -564,7 +564,7 @@ $.fn.extend({
 /******************************************************************************/
 
 /*
- * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ * jQuery Easing v1.3 - https://gsgd.co.uk/sandbox/jquery/easing/
  *
  * Uses the built in easing capabilities added In jQuery 1.1
  * to offer multiple easing options

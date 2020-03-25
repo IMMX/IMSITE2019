@@ -98,7 +98,7 @@ jQuery(function($) {
 	$.datepicker.setDefaults($.datepicker.regional['az']);
 });
 /* Bulgarian initialisation for the jQuery UI date picker plugin. */
-/* Written by Stoyan Kyosev (http://svest.org). */
+/* Written by Stoyan Kyosev (https://svest.org). */
 jQuery(function($){
     $.datepicker.regional['bg'] = {
         closeText: 'затвори',
@@ -264,7 +264,7 @@ jQuery(function($){
 });
 
 /* Greek (el) initialisation for the jQuery UI date picker plugin. */
-/* Written by Alex Cicovic (http://www.alexcicovic.com) */
+/* Written by Alex Cicovic (https://www.alexcicovic.com) */
 jQuery(function($){
 	$.datepicker.regional['el'] = {
 		closeText: 'Κλείσιμο',
@@ -1100,7 +1100,7 @@ jQuery(function($){
 });
 
 /* Dutch (UTF-8) initialisation for the jQuery UI date picker plugin. */
-/* Written by Mathias Bynens <http://mathiasbynens.be/> */
+/* Written by Mathias Bynens <https://mathiasbynens.be/> */
 jQuery(function($){
 	$.datepicker.regional.nl = {
 		closeText: 'Sluiten',

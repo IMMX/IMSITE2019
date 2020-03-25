@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Dialog 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Dialog
+ * https://docs.jquery.com/UI/Dialog
  *
  * Depends:
  *	jquery.ui.core.js
@@ -183,7 +183,7 @@ $.widget("ui.dialog", {
 				.prependTo(uiDialogTitlebar);
 
 		//handling of deprecated beforeclose (vs beforeClose) option
-		//Ticket #4669 http://dev.jqueryui.com/ticket/4669
+		//Ticket #4669 https://dev.jqueryui.com/ticket/4669
 		//TODO: remove in 1.9pre
 		if ($.isFunction(options.beforeclose) && !$.isFunction(options.beforeClose)) {
 			options.beforeClose = options.beforeclose;
@@ -305,7 +305,7 @@ $.widget("ui.dialog", {
 		}
 
 		//Save and then restore scroll since Opera 9.5+ resets when parent z-Index is changed.
-		//  http://ui.jquery.com/bugs/ticket/3193
+		//  https://ui.jquery.com/bugs/ticket/3193
 		saveScroll = { scrollTop: self.element.scrollTop(), scrollLeft: self.element.scrollLeft() };
 		$.ui.dialog.maxZ += 1;
 		self.uiDialog.css('z-index', $.ui.dialog.maxZ);
@@ -546,7 +546,7 @@ $.widget("ui.dialog", {
 			this.uiDialog.show();
 		}
 		this.uiDialog
-			// workaround for jQuery bug #5781 http://dev.jquery.com/ticket/5781
+			// workaround for jQuery bug #5781 https://dev.jquery.com/ticket/5781
 			.css({ top: 0, left: 0 })
 			.position($.extend({ of: window }, position));
 		if (!isVisible) {
@@ -584,7 +584,7 @@ $.widget("ui.dialog", {
 
 		switch (key) {
 			//handling of deprecated beforeclose (vs beforeClose) option
-			//Ticket #4669 http://dev.jqueryui.com/ticket/4669
+			//Ticket #4669 https://dev.jqueryui.com/ticket/4669
 			//TODO: remove in 1.9pre
 			case "beforeclose":
 				key = "beforeClose";

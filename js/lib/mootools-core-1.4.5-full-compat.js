@@ -3,7 +3,7 @@
 MooTools: the javascript framework
 
 web build:
- - http://mootools.net/core/76bf47062d6c1983d66ce47ad66aa0e0
+ - https://mootools.net/core/76bf47062d6c1983d66ce47ad66aa0e0
 
 packager build:
  - packager build Core/Core Core/Array Core/String Core/Number Core/Function Core/Object Core/Event Core/Browser Core/Class Core/Class.Extras Core/Slick.Parser Core/Slick.Finder Core/Element Core/Element.Style Core/Element.Event Core/Element.Delegation Core/Element.Dimensions Core/Fx Core/Fx.CSS Core/Fx.Tween Core/Fx.Morph Core/Fx.Transitions Core/Request Core/Request.HTML Core/Request.JSON Core/Cookie Core/JSON Core/DOMReady Core/Swiff
@@ -20,13 +20,13 @@ description: The heart of MooTools.
 
 license: MIT-style license.
 
-copyright: Copyright (c) 2006-2012 [Valerio Proietti](http://mad4milk.net/).
+copyright: Copyright (c) 2006-2012 [Valerio Proietti](https://mad4milk.net/).
 
-authors: The MooTools production team (http://mootools.net/developers/)
+authors: The MooTools production team (https://mootools.net/developers/)
 
 inspiration:
-  - Class implementation inspired by [Base.js](http://dean.edwards.name/weblog/2006/03/base/) Copyright (c) 2006 Dean Edwards, [GNU Lesser General Public License](http://opensource.org/licenses/lgpl-license.php)
-  - Some functionality inspired by [Prototype.js](http://prototypejs.org) Copyright (c) 2005-2007 Sam Stephenson, [MIT License](http://opensource.org/licenses/mit-license.php)
+  - Class implementation inspired by [Base.js](https://dean.edwards.name/weblog/2006/03/base/) Copyright (c) 2006 Dean Edwards, [GNU Lesser General Public License](https://opensource.org/licenses/lgpl-license.php)
+  - Some functionality inspired by [Prototype.js](https://prototypejs.org) Copyright (c) 2005-2007 Sam Stephenson, [MIT License](https://opensource.org/licenses/mit-license.php)
 
 provides: [Core, MooTools, Type, typeOf, instanceOf, Native]
 
@@ -1878,7 +1878,7 @@ var reverse = function(expression){
 	return expression;
 };
 
-var escapeRegExp = function(string){// Credit: XRegExp 0.6.1 (c) 2007-2008 Steven Levithan <http://stevenlevithan.com/regex/xregexp/> MIT License
+var escapeRegExp = function(string){// Credit: XRegExp 0.6.1 (c) 2007-2008 Steven Levithan <https://stevenlevithan.com/regex/xregexp/> MIT License
 	return string.replace(/[-[\]{}()*+?.\\^$|,#\s]/g, function(match){
 		return '\\' + match;
 	});
@@ -2271,7 +2271,7 @@ local.setDocument = function(document){
 	};
 
 	// document order sorting
-	// credits to Sizzle (http://sizzlejs.com/)
+	// credits to Sizzle (https://sizzlejs.com/)
 
 	features.documentSorter = (root.compareDocumentPosition) ? function(a, b){
 		if (!a.compareDocumentPosition || !b.compareDocumentPosition) return 0;
@@ -3986,7 +3986,7 @@ Element.Properties.html = {
 };
 
 /*<ltIE9>*/
-// technique by jdbarlett - http://jdbartlett.com/innershiv/
+// technique by jdbarlett - https://jdbartlett.com/innershiv/
 var div = document.createElement('div');
 div.innerHTML = '<nav></nav>';
 var supportsHTML5Elements = (div.childNodes.length == 1);
@@ -4715,8 +4715,8 @@ description: Contains methods to work with size, scroll, or positioning of Eleme
 license: MIT-style license.
 
 credits:
-  - Element positioning based on the [qooxdoo](http://qooxdoo.org/) code and smart browser fixes, [LGPL License](http://www.gnu.org/licenses/lgpl.html).
-  - Viewport dimensions based on [YUI](http://developer.yahoo.com/yui/) code, [BSD License](http://developer.yahoo.com/yui/license.html).
+  - Element positioning based on the [qooxdoo](https://qooxdoo.org/) code and smart browser fixes, [LGPL License](https://www.gnu.org/licenses/lgpl.html).
+  - Viewport dimensions based on [YUI](https://developer.yahoo.com/yui/) code, [BSD License](https://developer.yahoo.com/yui/license.html).
 
 requires: [Element, Element.Style]
 
@@ -5207,7 +5207,7 @@ Fx.CSS = new Class({
 				if (!(/px$/.test(value))){
 					value = element.style[('pixel-' + property).camelCase()];
 					if (value == null){
-						// adapted from Dean Edwards' http://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
+						// adapted from Dean Edwards' https://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
 						var left = element.style.left;
 						element.style.left = to + unit;
 						value = element.style.pixelLeft;
@@ -5542,7 +5542,7 @@ description: Contains a set of advanced transitions to be used with any of the F
 license: MIT-style license.
 
 credits:
-  - Easing Equations by Robert Penner, <http://www.robertpenner.com/easing/>, modified and optimized to be used with MooTools.
+  - Easing Equations by Robert Penner, <https://www.robertpenner.com/easing/>, modified and optimized to be used with MooTools.
 
 requires: Fx
 
@@ -6026,7 +6026,7 @@ description: JSON encoder and decoder.
 
 license: MIT-style license.
 
-SeeAlso: <http://www.json.org/>
+SeeAlso: <https://www.json.org/>
 
 requires: [Array, String, Number, Function]
 
@@ -6158,7 +6158,7 @@ description: Class for creating, reading, and deleting browser Cookies.
 license: MIT-style license.
 
 credits:
-  - Based on the functions by Peter-Paul Koch (http://quirksmode.org).
+  - Based on the functions by Peter-Paul Koch (https://quirksmode.org).
 
 requires: [Options, Browser]
 
@@ -6275,7 +6275,7 @@ var poll = function(){
 document.addListener('DOMContentLoaded', domready);
 
 /*<ltIE8>*/
-// doScroll technique by Diego Perini http://javascript.nwbox.com/IEContentLoaded/
+// doScroll technique by Diego Perini https://javascript.nwbox.com/IEContentLoaded/
 // testElement.doScroll() throws when the DOM is not ready, only in the top window
 var doScrollWorks = function(){
 	try {

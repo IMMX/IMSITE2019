@@ -1,13 +1,13 @@
 // MooTools: the javascript framework.
-// Load this file's selection again by visiting: http://mootools.net/more/ed8f79876aef13d46cd92cb9a6945e08 
+// Load this file's selection again by visiting: https://mootools.net/more/ed8f79876aef13d46cd92cb9a6945e08 
 // Or build this file again with packager using: packager build More/Date More/String.QueryString More/Element.Forms More/Element.Delegation More/OverText More/Fx.Scroll More/Fx.SmoothScroll More/Slider More/Request.JSONP More/Request.Queue
 /*
 ---
 copyrights:
-  - [MooTools](http://mootools.net)
+  - [MooTools](https://mootools.net)
 
 licenses:
-  - [MIT License](http://mootools.net/license.txt)
+  - [MIT License](https://mootools.net/license.txt)
 ...
 */
 MooTools.More={version:"1.3.2.1",build:"e586bcd2496e9b22acfde32e12f84d49ce09e59d"};(function(){var b=function(c){return c!=null;};var a=Object.prototype.hasOwnProperty;

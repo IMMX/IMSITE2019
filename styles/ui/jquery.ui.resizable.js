@@ -1,11 +1,11 @@
 /*!
  * jQuery UI Resizable 1.8.21
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Copyright 2012, AUTHORS.txt (https://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://docs.jquery.com/UI/Resizables
+ * https://docs.jquery.com/UI/Resizables
  *
  * Depends:
  *	jquery.ui.core.js
@@ -237,7 +237,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 		this.resizing = true;
 		this.documentScroll = { top: $(document).scrollTop(), left: $(document).scrollLeft() };
 
-		// bugfix for http://dev.jquery.com/ticket/1749
+		// bugfix for https://dev.jquery.com/ticket/1749
 		if (el.is('.ui-draggable') || (/absolute/).test(el.css('position'))) {
 			el.css({ position: 'absolute', top: iniPos.top, left: iniPos.left });
 		}
