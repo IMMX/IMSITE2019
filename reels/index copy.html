@@ -9,8 +9,30 @@
     <meta property="og:description" content="Interactive Agency that creates great online brand experiences." />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="build/jquery.js"></script>
+    <script src="build/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="build/mediaelementplayer.css" />
+
     <link rel="stylesheet" href="build/mejs-skins.css" />
+
+    <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+            _fbq.push(['addPixelId', '627164157420547']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=627164157420547&amp;ev=PixelInitialized" /></noscript>
+
 
 </head>
 
@@ -139,21 +161,33 @@
 
 
     <div id='mainContainer'>
-        
+
+
+
+
         <div id='oc'>
             <div id='player'>
-                
-                <div id="avplayer" class="container">
-                    
-                    <script src="https://fast.wistia.com/embed/medias/ieubsctw6s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ieubsctw6s videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 
+                <div id="avplayer" class="container">
+                    <!--         <video id='player1' width="980" height="551" src="media/Reel_COMPLETE_FAST.mp4" type="video/mp4" 
+      	     id="player1" poster="media/poster.png" 
+      	     controls="controls" preload="none">
+        </video> -->
+                    <iframe src="//fast.wistia.net/embed/iframe/ieubsctw6s?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+                        width="980" height="579"></iframe>
+                    <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
                 </div>
 
             </div>
-
         </div>
 
 
+        <div id='botonera'>
+            <button id='PlayA' onclick='playVideo("media/Reel_COMPLETE_FAST.mp4")'>Main Reel</button>
+            <button id='PlayB' onclick='playVideo("media/Reel_TO_16x9.mp4")'>Reel Rich Media</button>
+            <button id='PlayC' onclick='playVideo("media/Reel_ADS.mp4")'>Reel Ads</button>
+            <button id='PlayD' onclick='playVideo("media/Reel_SITES_16x9.mp4")'>Reel Sites</button>
+        </div>
 
 
         <div id='division'>
@@ -171,6 +205,52 @@
         </div>
     </div>
 
+    <script type='text/javascript'>
+        $('audio,video').mediaelementplayer({
+            success: function(player, node) {
+                $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+            }
+        });
+
+
+        function playVideo(videopath) {
+            $('video')[0].player.setSrc(videopath);
+            $('video')[0].player.load();
+            $('video')[0].player.play();
+
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/all.js#appId=&xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        window.___gcfg = {
+            lang: 'es'
+        };
+        (function() {
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        })();
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "https://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        try {
+            var pageTracker = _gat._getTracker("UA-102311-2");
+            pageTracker._trackPageview();
+        } catch (err) {}
+    </script>
 
 
 </body>
